@@ -19,15 +19,15 @@ class Solution {
           {
             if(f.val<=s.val){
                 ans.next=f;
-               
+                ans=ans.next;
                 f=f.next;
             }
             else{
                 ans.next=s;
-               
+                ans=ans.next;
                 s=s.next;
             }
-             ans=ans.next;
+            
           }
           while(f!=null){
             ans.next=f;
